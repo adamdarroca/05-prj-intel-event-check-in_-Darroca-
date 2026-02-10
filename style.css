@@ -348,6 +348,25 @@ select {
   color: #475569;
 }
 
+.team-count {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0071c5;
+}
+
+.team-names {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+  text-align: left;
+}
+
+.team-names li {
+  font-size: 13px;
+  color: #475569;
+  line-height: 1.4;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {

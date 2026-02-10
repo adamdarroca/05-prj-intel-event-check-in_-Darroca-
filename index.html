@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,18 +28,21 @@
     <div class="attendance-tracker">
       <div class="attendance-header">
         <i class="fas fa-users"></i>
-        Attendance: <span id="attendeeCount">0</span>/50
+        Attendance: <span id="attendeeCount">0</span>/50 (<span
+          id="attendancePercent"
+          >0%</span
+        >)
       </div>
       <div class="progress-container">
         <div id="progressBar" class="progress-bar"></div>
       </div>
     </div>
     <div class="container">
-      <!-- Feedback message -->
-      <p id="greeting"></p>
-
       <!-- Check-in form -->
       <form class="check-in" id="checkInForm">
+        <!-- Feedback message (shows after each check-in) -->
+        <p id="greeting"></p>
+
         <label for="attendeeName" class="form-label">Attendee Check-In</label>
         <div class="form-group">
           <div class="input-wrapper">
@@ -70,14 +73,17 @@
           <div class="team-card water">
             <span class="team-name">🌊 Team Water Wise</span>
             <span class="team-count" id="waterCount">0</span>
+            <ul class="team-names" id="waterNames"></ul>
           </div>
           <div class="team-card zero">
             <span class="team-name">🌿 Team Net Zero</span>
             <span class="team-count" id="zeroCount">0</span>
+            <ul class="team-names" id="zeroNames"></ul>
           </div>
           <div class="team-card power">
             <span class="team-name">⚡ Team Renewables</span>
             <span class="team-count" id="powerCount">0</span>
+            <ul class="team-names" id="powerNames"></ul>
           </div>
         </div>
       </div>
